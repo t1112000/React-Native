@@ -2,10 +2,10 @@ import React from "react";
 import { View, Image, Text, StyleSheet } from "react-native";
 import SkiiImage from "../assets/ski.png";
 
-export default CategoryListItem = (porps) => {
+export default CategoryListItem = ({ category }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>CategoryListItem !!</Text>
+      <Text style={styles.title}>{category.name}</Text>
       <Image style={styles.categoryImage} source={SkiiImage} />
     </View>
   );
